@@ -14,9 +14,9 @@ int main(void)
 
 	for (x = 0; x <= 7; x++)
 	{
-		for (y = x+1 ; y < 9; y++)
+		for (y = x + 1 ; y < 9; y++)
 		{
-			for (k = y+1 ; k < 10; k++ )
+			for (k = y + 1 ; k < 10; k++)
 			{
 			putchar('0' + x);
 			putchar('0' + y);
@@ -24,8 +24,8 @@ int main(void)
 			if (x == 7 && y == 8 && k == 9)
 				continue;
 			putchar(',');
-			putchar(' ');          
-			}     
+			putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
