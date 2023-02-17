@@ -18,13 +18,13 @@ int main(void)
 		{
 			if (y > x)
 				{
-					putchar('0' + x);
-					putchar('0' + y);
-					if (x == 8 && y == 9)
-						continue;
-					putchar(',');
-					putchar(' ');
-					}
+				putchar('0' + x);
+				putchar('0' + y);
+				if (x == 8 && y == 9)
+					continue;
+				putchar(',');
+				putchar(' ');
+				}
 		}
 	}
 	putchar('\n');
