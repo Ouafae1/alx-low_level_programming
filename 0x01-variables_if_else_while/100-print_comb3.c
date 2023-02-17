@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	int x,y=0;
+	int x, y = 0;
 
 	for (x = 0; x <= 8; x++)
 	{
@@ -24,7 +24,7 @@ int main(void)
 						continue;
 					putchar(',');
 					putchar(' ');
-				}	
+				}
 		}
 	}
 	putchar('\n');
