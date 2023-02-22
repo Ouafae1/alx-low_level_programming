@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -9,19 +7,13 @@
  */
 
 int main( void ){
-        int length;
-        char message[] = "_putchar";
-
-        length = strlen(message);
-        for (int count = 0; count < length; count++)
+        char *sh = "_putchar";
+        
+        while (*sh)
         {
-                if (message[count] == '\0')
-                {
-                putchar('\n');
-                break;
-                }
-                else
-                putchar(message[count]);
+                _putchar(*sh);
+                sh++;
         }
+        putchar('\n'); 
         return 0;
 }
