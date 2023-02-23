@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -7,21 +5,15 @@
  *
  * Return: Always 0.
  */
-
-int main( void ){
-        int length;
+int main(void)
+{
+        int i = 0;
         char message[] = "_putchar";
-
-        length = strlen(message);
-        for (int count = 0; count < length; count++)
+        while (message[i] != '\0')
         {
-                if (message[count] == '\0')
-                {
-                putchar('\n');
-                break;
-                }
-                else
-                putchar(message[count]);
+                _putchar(message[i]);
+                i++;
         }
-        return 0;
+        _putchar('\n');
+        return (0);
 }
