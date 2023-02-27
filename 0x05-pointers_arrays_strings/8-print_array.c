@@ -13,6 +13,6 @@ void print_array(int *a, int n)
 	while (a[len] != 0)
 		len++;
 	for (i = 0; i < n ; i++)
-		_putchar (str[i]);
+		_putchar (a[i]);
 	_putchar ('\n');
 }
