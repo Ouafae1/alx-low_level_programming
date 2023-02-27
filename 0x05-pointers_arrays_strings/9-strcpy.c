@@ -6,7 +6,7 @@
  *
  * @dest: buffer to copy the string to.
  * @src: string to be copied.
- * return : a pointer to the string dest.
+ * Return : a pointer to the string dest.
  */
 
 char *_strcpy(char *dest, char *src)
@@ -18,6 +18,6 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 		i++;
 	}
-	*dest = '\0';
+	dest = dest + '\0';
 	return (dest);
 }
