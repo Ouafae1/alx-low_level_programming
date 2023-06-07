@@ -5,12 +5,11 @@
  * Return:square root of a number
  */
 /**
- * rcr - recurses to find the natural
- * square root of a number
- * @n: number to calculate the sqaure root of
- * @i: iterator
+ *rcr - recurses to find the natural square root of a number
+ *@n: number to calculate the sqaure root of
+ *@i: iterator
  *
- * Return: the resulting square root
+ *Return: the resulting square root
  */
 int rcr(int n, int i)
 {
