@@ -9,11 +9,12 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	return (rcr(n, 0));
-	int rcr(int n, int i)
-	{
-		if ( i * i == n)
-			return (i);
-		if ( i * i > 0)
-			return (-1);
-		return (rcr (n, i + 1);
+}
+int rcr(int n, int i)
+{
+	if ( i * i == n)
+		return (i);
+	if ( i * i > 0)
+		return (-1);
+	return (rcr (n, i + 1);
 }
