@@ -1,29 +1,21 @@
+#include "function_pointers.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
 /**
- * _strdup - duplicate to new memory space location
- * @str: char
- * Return: 0
+ * array_iterator - prints each array elem on a newl
+ * @array: array
+ * @size: how many elem to print
+ * @action: pointer to print in regular or hex
+ * Return: void
  */
-char *_strdup(char *str)
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	char *aaa;
-	int i, r = 0;
+	unsigned int i;
 
-	if (str == NULL)
-		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-		i++;
+	if (array == NULL || action == NULL)
+		return;
 
-	aaa = malloc(sizeof(char) * (i + 1));
-
-	if (aaa == NULL)
-		return (NULL);
-
-	for (r = 0; str[r]; r++)
-		aaa[r] = str[r];
-
-	return (aaa);
+	for (i = 0; i < size; i++)
+	{
+		action(array[i]);
+	}
 }
